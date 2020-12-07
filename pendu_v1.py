@@ -43,14 +43,13 @@ while True:
     alphabet=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
     lettres_deja_entrees=[]
     lettre_trouvee=[liste_lettres[0]]
-    doublon=len(liste_lettres)-len(set(liste_lettres))
     mot_trouve=False
     liste_sans_premiere_lettre=liste_lettres[:]
     liste_sans_premiere_lettre.remove(liste_lettres[0])
     
     
     while erreurs<8 and mot_trouve==False:
-        lettre=raw_input("Veuillez entrer une lettre: ")
+        lettre=input("Veuillez entrer une lettre: ")
         cas_particulier=False
         if (lettre in alphabet):
             #Cas particulier le joueur rentre une lettre qui est aussi la premiere lettre du mot
